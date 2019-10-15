@@ -1,0 +1,29 @@
+Elise May
+Assignment 3: Syntax Checker
+Student ID: 2271041
+Email: may137@mail.chapman.edu
+CPSC 350-02
+
+Source Files:
+GenStack.h
+delimiter.h
+delimiter.cpp
+main.cpp
+test.h
+
+Runtime Errors:
+None to my knowledge :0 (just shook it actually compiled for once)
+Sometimes it repeats 'Stack is empty...' for some reason... only sometimes !!
+
+References:
+GenStack reference code from class :-)
+Data Structures & Algorithms in C++, 2nd Edition, by Goodrich et al.  Wiley, 2009.
+http://www.cplusplus.com/doc/oldtutorial/templates/
+https://stackoverflow.com/questions/20305762/c-delimiter-matching
+https://codereview.stackexchange.com/questions/46946/user-input-and-reading-contents-of-file
+https://stackoverflow.com/questions/24276482/how-to-check-if-users-input-is-valid-c
+
+Instructions:
+1. g++ *.*
+2. ./a.out filename (filename being the file you want to check for syntax errors)
+3. If file is syntactically correct, user can input another file to run
