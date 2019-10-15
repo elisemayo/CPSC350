@@ -85,7 +85,7 @@ void GenStack<T>::push(T d){
 template <class T>
 char GenStack<T>::pop(){
   if(isEmpty() == true){
-    //cout << "Stack is empty..." << endl;
+    cout << "Stack is empty..." << endl;
     return 0;
   }
   else{
@@ -97,7 +97,7 @@ char GenStack<T>::pop(){
 template <class T>
 char GenStack<T>::peek(){
   if(isEmpty() == true){
-    //cout << "Stack is empty..." << endl;
+    cout << "Stack is empty..." << endl;
     return 0;
   }
   else{
