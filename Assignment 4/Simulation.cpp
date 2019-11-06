@@ -46,6 +46,8 @@ bool Simulation::readFile(string file){
       getline(inputStream, line);
       totalWindows = atoi(line.c_str());
 
+      windowArray = new Student* [totalWindows];
+
       for(int i = 0; i < totalWindows; ++i){
         Student* student = new Student();
         windowArray[i] = student;
@@ -128,7 +130,7 @@ bool Simulation::timer(int t){
 
   if(!studentQueue.isEmpty()) {
     //set current to front of queue
-    ListNode<Student*> *curr = studentQueue.front;
+    ListNode<Student*> * curr = studentQueue.front;
     //total time in queue
     while(curr != NULL){
       if(curr -> data -> entryTime < t){
@@ -145,21 +147,21 @@ double Simulation::meanTime(){
   ListNode<int> * curr = waitTimeStats.front;
 
   double total = 0;
-  int counter = 0;
+  int count = 0;
   double meanWait = 0;
 
   //count total of elements
   while(curr != NULL){
     total += curr -> data;
     curr = curr -> next;
-    counter++;
+    count++;
   }
   //check if empty queue
-  if(counter == 0){
+  if(count == 0){
     return 0;
   }
 
-  meanWait = total / double(counter);
+  meanWait = total / double(count);
 
   return meanWait;
 }
