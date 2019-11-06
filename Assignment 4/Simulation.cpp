@@ -259,21 +259,21 @@ double Simulation::meanIdleTime(){
   ListNode<int> * curr = idleTimeStats.front;
   //variables needed for calculations
   double total = 0;
-  int counter = 0;
+  int count = 0;
   double meanIdle = 0;
 
   //counting to get total
   while(curr != NULL){
     total += curr -> data;
     curr = curr -> next;
-    counter++;
+    count++;
   }
   //empty queue
-  if(counter == 0){
+  if(count == 0){
     return 0;
   }
 
-  meanIdle = total / double(counter);
+  meanIdle = total / double(count);
 
   return meanIdle;
 }
@@ -303,7 +303,8 @@ int Simulation::longestIdleTime(){
   //sort ascending
   sort(idleArray, idleArray + idleArrayCount);
 
-  return(idleArray[idleArrayCount - 1]);
+
+  return idleArray[idleArrayCount - 1];
 }
 
 int Simulation::idleOverFiveTime(){
