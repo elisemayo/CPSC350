@@ -61,8 +61,22 @@ bool Simulation::readFile(string file){
 
     while(getline(inputStream, line)){
       switch(lineType){
-        //number of students
+        //clock ticks
         case(1):{
+          try{
+            studentEntryTime = atoi(line.c_str());
+            lineType++;
+            lineNum++;
+          }
+          catch(exception e){
+            cout << "ERROR! Cannot read clock ticks..." << endl;
+            return false;
+          }
+          break;
+
+        }
+        //number of students 
+        case(2):{
           try{
             if(line != ""){
               numStudents = atoi(line.c_str());
@@ -87,19 +101,6 @@ bool Simulation::readFile(string file){
           }
           catch(exception e){
             cout << "ERROR! Cannot read number of students..." << endl;
-            return false;
-          }
-          break;
-        }
-        //clock ticks
-        case(2):{
-          try{
-            studentEntryTime = atoi(line.c_str());
-            lineType++;
-            lineNum++;
-          }
-          catch(exception e){
-            cout << "ERROR! Cannot read clock ticks..." << endl;
             return false;
           }
           break;
