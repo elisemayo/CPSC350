@@ -1,0 +1,29 @@
+Elise May
+Assignment 4: Registrar's Office Simulation
+Student ID: 2271041
+Email: may137@mail.chapman.edu
+CPSC 350-02
+
+Source Files:
+ListNode.h
+GenQueue.h
+DoublyLinkedList.h
+Student.h
+Student.cpp
+Simulation.h
+Simulation.cpp
+main.cpp
+
+Runtime Errors:
+Segmentation Fault :-(
+
+References:
+ListNode, GenQueue, DoublyLinkedList reference code from class :-)
+Data Structures & Algorithms in C++, 2nd Edition, by Goodrich et al.  Wiley, 2009.
+http://www.cplusplus.com/doc/oldtutorial/templates/
+http://www.stackoverflow.com/
+
+Instructions:
+1. g++ *.*
+2. ./a.out filename (filename being the file you want to check for syntax errors)
+3. If file is syntactically correct, user can input another file to run
