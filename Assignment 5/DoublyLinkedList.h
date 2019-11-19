@@ -30,6 +30,7 @@ class DoublyLinkedList{
     T peekFront();
     bool search(T d);
     bool remove(T d);
+    void printList();
 
     //aux functions
     bool isEmpty();
@@ -203,6 +204,20 @@ bool DoublyLinkedList<T>::remove(T d){
     current = current -> next;
   }
   return false;
+}
+
+template <class T>
+void DoublyLinkedList<T>::printList(){
+  ListNode<T> * curr = front;
+
+  while(true){
+    if(curr -> next == NULL){
+      break;
+    }
+  //print each element and iterate to next
+  cout << curr -> data << endl;
+  curr = curr -> next;
+  }
 }
 
 template <class T>
