@@ -22,7 +22,7 @@ Runtime Errors:
 References:
 ListNode, GenStack, DoublyLinkedList, TreeNode, BST reference code from class :-)
 Data Structures & Algorithms in C++, 2nd Edition, by Goodrich et al.  Wiley, 2009.
-https://www.geeksforgeeks.org/virtual-function-cpp/
+https://en.cppreference.com/w/cpp/language/operators
 https://stackoverflow.com/questions/924664/why-is-null-undeclared/924675
 https://www.gamedev.net/forums/topic/560559-doubly-linked-list-destructor/
 
