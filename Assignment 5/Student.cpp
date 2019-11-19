@@ -38,7 +38,12 @@ void Student::setAdvisor(int advisorID){
 }
 
 int Student::getAdvisor(){
-  return advisor;
+  if(advisor == 0){
+    cout << "No Advisor..." << endl;
+  }
+  else{
+    return advisor;
+  }
 }
 
 void Student::printStudent(){
