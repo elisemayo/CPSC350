@@ -5,6 +5,13 @@ Email: may137@mail.chapman.edu
 CPSC 350-02
 
 Source Files:
+BST.h
+TreeNode.h
+DoublyLinkedList.h
+ListNode.h
+GenStack.h
+Person.h
+Person.cpp
 
 Runtime Errors:
 
