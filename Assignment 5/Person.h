@@ -5,6 +5,8 @@
  CPSC 350-02
  Assignment 5
  */
+ #ifndef PERSON_H
+ #define PERSON_H
  #include <iostream>
 
  using namespace std;
@@ -18,7 +20,9 @@
 
    //constructor
    Person();
-   //destructor 
+   //overloaded constructor
+   //Person(int id, string name, string level);
+   //destructor
    ~Person();
 
    //methods
@@ -28,3 +32,5 @@
    string getName();
    string getLevel();
  };
+
+#endif

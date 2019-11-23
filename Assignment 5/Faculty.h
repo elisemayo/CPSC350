@@ -5,6 +5,8 @@
  CPSC 350-02
  Assignment 5
 */
+#ifndef FACULTY_H
+#define FACULTY_H
 #include <iostream>
 #include "Person.h"
 #include "DoublyLinkedList.h"
@@ -56,3 +58,5 @@ class Faculty: public Person{
       return(this -> ID > f.ID);
     }
 };
+
+#endif

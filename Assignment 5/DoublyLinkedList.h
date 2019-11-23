@@ -12,14 +12,15 @@ using namespace std;
 
 template <class T>
 class DoublyLinkedList{
+  private:
+    unsigned int size;
+    ListNode<T> * back;
   public:
     DoublyLinkedList();
     ~DoublyLinkedList();
 
     //pointers and variables
     ListNode<T> * front;
-    ListNode<T> * back;
-    unsigned int size;
 
     //core functions
     void insertBack(T d);
@@ -64,7 +65,7 @@ template <class T>
 void DoublyLinkedList<T>::insertBack(T d){
   ListNode<T> * node = new ListNode<T>(d);
 
-  if(isEmpty()){
+  if(size == 0){
     //we have empty list
     front = node;
   }
@@ -81,7 +82,7 @@ template <class T>
 void DoublyLinkedList<T>::insertFront(T d){
   ListNode<T> * node = new ListNode<T>(d);
 
-  if(isEmpty()){
+  if(size == 0){
     //we have empty list
     back = node;
   }
@@ -96,7 +97,7 @@ void DoublyLinkedList<T>::insertFront(T d){
 
 template <class T>
 T DoublyLinkedList<T>::removeBack(){
-  if(!isEmpty()){
+  if(size != 0){
   //placeholder
   ListNode<T> * bk = back;
 
@@ -108,9 +109,8 @@ T DoublyLinkedList<T>::removeBack(){
   else{
     //more than one element in list
     back -> prev -> next = NULL;
+    back = back -> prev;
   }
-
-  back = back -> prev;
   T temp = bk -> data;
   bk -> prev = NULL;
   --size;
@@ -124,7 +124,7 @@ T DoublyLinkedList<T>::removeBack(){
 
 template <class T>
 T DoublyLinkedList<T>::removeFront(){
-  if(!isEmpty()){
+  if(size != 0){
   //placeholder
   ListNode<T> * ft = front;
 
@@ -136,9 +136,8 @@ T DoublyLinkedList<T>::removeFront(){
   else{
     //more than one element in list
     front -> next -> prev = NULL;
+    front = front -> next;
   }
-
-  front = front -> next;
   T temp = ft -> data;
   ft -> next = NULL;
   --size;
@@ -210,13 +209,13 @@ template <class T>
 void DoublyLinkedList<T>::printList(){
   ListNode<T> * curr = front;
 
-  while(true){
+  while(curr != NULL){
+    //print each element and iterate to next
+    cout << curr -> data << endl;
+    curr = curr -> next;
     if(curr -> next == NULL){
       break;
     }
-  //print each element and iterate to next
-  cout << curr -> data << endl;
-  curr = curr -> next;
   }
 }
 

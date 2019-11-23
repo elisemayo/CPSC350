@@ -6,6 +6,7 @@
  Assignment 5
 */
 #include "Faculty.h"
+#include <iostream>
 
 using namespace std;
 
@@ -46,10 +47,10 @@ void Faculty::removeAdvisee(int adviseeID){
 }
 
 void Faculty::printFaculty(){
-  cout << "Name: " << name << endl;
-  cout << "Faculty ID: " << ID << endl;
-  cout << "Level: " << level << endl;
-  cout << "Department: " << dept << endl;
+  cout << "Name: " << getName() << endl;
+  cout << "Faculty ID: " << getID() << endl;
+  cout << "Level: " << getLevel() << endl;
+  cout << "Department: " << getDept() << endl;
   cout << "Advisee IDs: " << endl;
   advisees -> printList();
   cout << endl;

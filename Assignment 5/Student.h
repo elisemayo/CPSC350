@@ -5,6 +5,8 @@
  CPSC 350-02
  Assignment 5
 */
+#ifndef STUDENT_H
+#define STUDENT_H
 #include <iostream>
 #include "Person.h"
 
@@ -30,3 +32,5 @@ class Student: public Person{
     int getAdvisor();
     void printStudent();
 };
+
+#endif

@@ -12,6 +12,13 @@ using namespace std;
  //constructor
 Person::Person(){}
 
+//overloaded constructor
+// Person::Person(int id, string name, string level){
+//   ID = id;
+//   name = name;
+//   level = level;
+// }
+
  //destructor
 Person::~Person(){}
 
