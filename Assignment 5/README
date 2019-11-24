@@ -23,6 +23,10 @@ Processor.cpp
 main.cpp
 
 Runtime Errors:
+I apologize in advance for this assignment - I have to get on a plane right now so I truly attempted everything 
+but could not make it happen.  My BST, DLL, Person, Student, and Faculty classes all work so I tried to show 
+tests in the main but I have commented out the Menu and Processor files in order to let it compile. I'm sorry 
+I am a disgrace to the Data Structures gods...
 
 References:
 ListNode, GenStack, DoublyLinkedList, TreeNode, BST reference code from class :-)
@@ -34,5 +38,5 @@ http://www.keil.com/support/man/docs/armcc/armcc_chr1359124976881.htm
 
 Instructions:
 1. make all
-2. ./Assignment5.out filename
-3. Follow instructions to select menu option.
+2. ./Assignment5.out
+3. Follow instructions to select menu option. (in theory)
