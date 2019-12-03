@@ -6,7 +6,9 @@ CPSC 350-02
 Assignment 6: Sorting Algorithms
 
 Source Files:
-
+Sorting.h
+Sorting.cpp
+main.cpp
 
 Runtime Errors:
 
