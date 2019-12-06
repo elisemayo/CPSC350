@@ -21,4 +21,6 @@ https://stackoverflow.com/questions/30113067/how-to-populate-a-file-with-random-
 
 Instructions:
 1. make all
-2. ./Assignment6.out test.txt
+2. ./Assignment6.out filename.txt
+3. Follow the prompt to enter the number of items you would like to sort.
+4. Sit back and relax while your computer flexes.
