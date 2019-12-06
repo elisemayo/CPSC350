@@ -211,6 +211,29 @@ void Sorting::sortAll(){
   cout << "----Sorting Complete----" << endl;
 }
 
+void Sorting::writeFile(string file){
+  int items;
+  double randNum;
+
+  cout << "Please enter the number of items you would like to sort: " << endl;
+  cin >> items;
+
+  ofstream outputFile;
+  outputFile.open(file);
+
+  if(outputFile.is_open()){
+    outputFile << items << "\n";
+    for(int i = 0; i < items; ++i){
+      randNum = rand()%10000;
+      outputFile << randNum << "\n";
+    }
+    outputFile.close();
+  }
+  else{
+    cout << "File could not be opened..." << endl;
+  }
+}
+
 void Sorting::readFile(string file){
   string numberElements;
   string line;

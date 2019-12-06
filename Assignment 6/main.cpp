@@ -20,6 +20,7 @@ int main(int argc, char** argv){
 
   else if(argc >= 2){
     string file = argv[1];
+    s.writeFile(file);
     s.readFile(file);
   }
   return 0;

@@ -28,6 +28,7 @@ class Sorting{
 
     void sortAll();
 
+    void writeFile(string file);
     void readFile(string file);
 
   private:
