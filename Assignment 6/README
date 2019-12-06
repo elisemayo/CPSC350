@@ -1,8 +1,8 @@
 Elise May
+Assignment 6: Sorting Algorithms
 Student ID: 2271041
 Student Email: may137@mail.chapman.edu
 CPSC 350-02
-Assignment 6: Sorting Algorithms
 
 Source Files:
 Sorting.h
@@ -13,6 +13,11 @@ Runtime Errors:
 NONE!!! wooohoooo
 
 References:
-
+Data Structures & Algorithms in C++, 2nd Edition, by Goodrich et al.  Wiley, 2009.
+Reference code for bubbleSort, selectionSort, and insertionSort from class :-)
+https://www.geeksforgeeks.org/quick-sort/
+https://www.geeksforgeeks.org/merge-sort/
 
 Instructions:
+1. make all
+2. ./Assignment6.out test.txt
